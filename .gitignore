@@ -1,0 +1,4 @@
+*.bin
+*.model
+*.safetensors
+*.pt
