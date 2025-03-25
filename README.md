@@ -1,8 +1,8 @@
-# 📘 T5 Summarization Model
+#  T5 Summarization Model
 
 This is a fine-tuned [T5](https://huggingface.co/t5-small) model for text summarization tasks.
 
-## 🧠 Model Info
+##  Model Info
 
 - Base model: `t5-small`
 - Task: Text Summarization
@@ -13,13 +13,13 @@ This is a fine-tuned [T5](https://huggingface.co/t5-small) model for text summar
 - ROUGE-2: 13.62
 - ROUGE-L: 29.42
 
-## 🚀 Usage (in Python)
+##  Usage (in Python)
 
 ```python
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-model = T5ForConditionalGeneration.from_pretrained("你的帳號/t5-summarization")
-tokenizer = T5Tokenizer.from_pretrained("你的帳號/t5-summarization")
+model = T5ForConditionalGeneration.from_pretrained("Your account/t5-summarization")
+tokenizer = T5Tokenizer.from_pretrained("Your account/t5-summarization")
 
 text = "summarize: The Eiffel Tower is a famous landmark in Paris..."
 inputs = tokenizer(text, return_tensors="pt", truncation=True)
